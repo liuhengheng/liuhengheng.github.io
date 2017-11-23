@@ -6,17 +6,38 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>the first artical | 泡菜的博客</title>
+  <title>Hexo+Github/Coding 搭建自己的博客 | 泡菜的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="技术">
+  <meta name="description" content="目录[TOC] 为什么要自己搭建博客 现在网上一大堆写博客的地方，就是想弄个自己的博客，逼格高点吧，想改成什么样就改成什么样，当然，主要还是记录生活、工作等等方面自己想记录的东西，这篇文章也是为了总结自己搭建博客的过程，也希望能给那些想自己玩博客的人提供一点帮助吧。我的博客及写文章就从这篇文章开始吧。  开始之前的介绍">
+<meta name="keywords" content="技术">
 <meta property="og:type" content="article">
-<meta property="og:title" content="the first artical">
+<meta property="og:title" content="Hexo+Github&#x2F;Coding 搭建自己的博客">
 <meta property="og:url" content="http://yoursite.com/2017/11/21/the-first-artical/index.html">
 <meta property="og:site_name" content="泡菜的博客">
+<meta property="og:description" content="目录[TOC] 为什么要自己搭建博客 现在网上一大堆写博客的地方，就是想弄个自己的博客，逼格高点吧，想改成什么样就改成什么样，当然，主要还是记录生活、工作等等方面自己想记录的东西，这篇文章也是为了总结自己搭建博客的过程，也希望能给那些想自己玩博客的人提供一点帮助吧。我的博客及写文章就从这篇文章开始吧。  开始之前的介绍gitHub是一个面向开源及私有软件项目的托管平台，极大推进软件行业的进步，想必">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T01:57:33.787Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123143621358?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123143949391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123112844980?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123144707312?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123151537706?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123151938254?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123153742697?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123154322521?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123154619743?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123153147695?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123160112955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123160623715?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123160642448?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123161040975?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123164749967?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123165720507?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171123165828844?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-11-23T09:19:12.891Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="the first artical">
+<meta name="twitter:title" content="Hexo+Github&#x2F;Coding 搭建自己的博客">
+<meta name="twitter:description" content="目录[TOC] 为什么要自己搭建博客 现在网上一大堆写博客的地方，就是想弄个自己的博客，逼格高点吧，想改成什么样就改成什么样，当然，主要还是记录生活、工作等等方面自己想记录的东西，这篇文章也是为了总结自己搭建博客的过程，也希望能给那些想自己玩博客的人提供一点帮助吧。我的博客及写文章就从这篇文章开始吧。  开始之前的介绍gitHub是一个面向开源及私有软件项目的托管平台，极大推进软件行业的进步，想必">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20171123143621358?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="泡菜的博客" type="application/atom+xml">
   
@@ -163,7 +184,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      the first artical
+      Hexo+Github/Coding 搭建自己的博客
     </h1>
   
 
@@ -176,7 +197,79 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
+<h2 id="为什么要自己搭建博客"><a href="#为什么要自己搭建博客" class="headerlink" title="为什么要自己搭建博客"></a>为什么要自己搭建博客</h2><blockquote>
+<p>现在网上一大堆写博客的地方，就是想弄个自己的博客，逼格高点吧，想改成什么样就改成什么样，当然，主要还是记录生活、工作等等方面自己想记录的东西，这篇文章也是为了总结自己搭建博客的过程，也希望能给那些想自己玩博客的人提供一点帮助吧。我的博客及写文章就从这篇文章开始吧。</p>
+</blockquote>
+<h2 id="开始之前的介绍"><a href="#开始之前的介绍" class="headerlink" title="开始之前的介绍"></a>开始之前的介绍</h2><p>gitHub是一个面向开源及私有软件项目的托管平台，极大推进软件行业的进步，想必大家应该都知道gitGub，详细介绍就自行百度吧。<br>coding也是一个代码托管平台，说实话之前我不知道coding（尴尬），开始搭建博客才知道有coding，在国内coding要比github快，服务器部署在中国嘛。<br>Hexo 是基于node.js 生成静态网页的工具。</p>
+<p>总体思路就是通过hexo生成静态页面，部署到github和coding上。接下来就开始干吧</p>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><ul>
+<li><p>根据自己的电脑系统下载Git Bash对应的安装文件<br>   <a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">下载地址</a> : 安装一路next</p>
+<p><img src="http://img.blog.csdn.net/20171123143621358?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"> </p>
+</li>
+<li><p>安装好后打开Git Bash检查git版本 命令：git version</p>
+<p><img src="http://img.blog.csdn.net/20171123143949391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h3 id="Node-js的安装"><a href="#Node-js的安装" class="headerlink" title="Node.js的安装"></a>Node.js的安装</h3></li>
+<li><p>根据自己的电脑系统下载Node.js对应的安装文件：</p>
+<p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载地址</a> : 安装一路next<br><img src="http://img.blog.csdn.net/20171123112844980?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="一直next"></p>
+</li>
+<li><p>安装好后打开Git Bash检查node.js版本 命令：node -v</p>
+<p><img src="http://img.blog.csdn.net/20171123144707312?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+</ul>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
+<li>先创建一个文件夹blog，用来存放日志，进到blog文件夹 右键 选择Git Base</li>
+<li>安装hexo命令：npm i -g hexo</li>
+<li><p>安装完毕 检查hexo版本 命令 hexo -v<br><img src="http://img.blog.csdn.net/20171123151537706?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>初始化hexo命令：hexo init<br>blog 文件夹下目录结构发生变化<br><img src="http://img.blog.csdn.net/20171123151938254?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息</p>
+</li>
+</ul>
+<h3 id="感受一下hexo"><a href="#感受一下hexo" class="headerlink" title="感受一下hexo"></a>感受一下hexo</h3><ul>
+<li>忙了半天，也没看到效果，好吧，现在就要看一下效果，感受一下hexo</li>
+<li><p>同样在命令行中输入：hexo g  意思是编译成静态页面，因为我里面的内容比较多 可能会和你有点出入，没关系<br><img src="http://img.blog.csdn.net/20171123153742697?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>然后输入：hexo s  启动本地项目<br><img src="http://img.blog.csdn.net/20171123154322521?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>在浏览器中打开<a href="http://localhost:4000/，你将会看到：" target="_blank" rel="noopener">http://localhost:4000/，你将会看到：</a><br><img src="http://img.blog.csdn.net/20171123154619743?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>hexo 可以正常工作了 </p>
+<h2 id="hexo连接到github和coding"><a href="#hexo连接到github和coding" class="headerlink" title="hexo连接到github和coding"></a>hexo连接到github和coding</h2></li>
+<li><p>首先要有个github账号，没有的话，就去注册一个，有账号就直接new repository 仓库名称： yourname.github.io （yourname 是你的github账号）<br>，你可能会想为什么要这么命名仓库名称，因为只有这样，你部署到github之后 才能用yourname.github.io 访问，不用输入项目名称，爱玩的可以试一下别的仓库名字 。<br><img src="http://img.blog.csdn.net/20171123153147695?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>仓库建好之后，回到git bash 窗口，配置github用户户信息<br>(yourname : 你的账号名称，yoursemail: 你github绑定的邮箱)<br>git config –global user.name “yourname”<br>git config –global user.email “yoursemail@163.com”</p>
+</li>
+<li><p>生成密钥 （注意C大写）<br>ssh-keygen -t rsa -C “yoursemail@163.com”<br>生成之后通过以下方法找到生成好的秘钥<br>cd ~/.ss<br>cat id_rsa.pub<br><img src="http://img.blog.csdn.net/20171123160112955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>将获取的秘钥放到github<br><img src="http://img.blog.csdn.net/20171123160623715?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20171123160642448?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>在gitbash中验证是否添加成功：ssh -T git@github.com</p>
+<p><img src="http://img.blog.csdn.net/20171123161040975?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+<li><p>配置_config.yml文件<br>在blog文件夹下找到_config.yml文件，文件最下面找到Deployment，然后按照如下修改： （注意 ：冒号之后都是有一个半角空格的）</p>
+<p>deploy:<br>type: git<br>repo: git@github.com:yourname/yourname.github.io.git，master</p>
+</li>
+<li><p>上传到github<br>先安装一波：npm install hexo-deployer-git –save<br>执行命令(建议每次都按照如下步骤部署)：</p>
+<p>hexo clean  // 清楚缓存<br>hexo g  // 编译文件<br>hexo d // 部署文件</p>
+<p>浏览器中输入地址 <a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 你就会看到你的博客了， 有没有很兴奋 。</p>
+</li>
+</ul>
+<h2 id="逼格升级（绑定你自己的域名）"><a href="#逼格升级（绑定你自己的域名）" class="headerlink" title="逼格升级（绑定你自己的域名）"></a>逼格升级（绑定你自己的域名）</h2><ul>
+<li>如果没有域名就算了，如果你有空闲的域名可以绑定到自己的博客</li>
+<li>添加俩记录 如果没有 就点击右上角 快速设置解析模仿着我的添加就行</li>
+<li>注意：记录值填写 yourgitname.github.io,俩都填这个，我看到有别的文章让填ip的，但是ip有时候会变 ，我建议填写yourgitname.github.io,  yourgitnae:是你自己的github账号 切记</li>
+</ul>
+<p><img src="http://img.blog.csdn.net/20171123164749967?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<ul>
+<li>github仓库设置一下<br><img src="http://img.blog.csdn.net/20171123165720507?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+</ul>
+<p>往下来<br><img src="http://img.blog.csdn.net/20171123165828844?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjE5ODQyODc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<ul>
+<li>十分钟之后，浏览器输入你的域名 就能访问你的博客了。</li>
+</ul>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>coding，留言板 后续补上，<br>就写到这吧，写一天了，第一次写文章，感觉好累，给那些经常写文章的人说句“辛苦了”。如果在搭建的时候 你们出现什么问题 ，请在下面留言，我会尽快给与回复，如果哪写错了  也可以在下面留言指出来，感激不尽。</p>
+<p>转载请注明原博客地址：</p>
+
       
 
       
